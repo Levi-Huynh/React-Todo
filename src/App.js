@@ -2,6 +2,7 @@ import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from'./components/TodoComponents/TodoForm';
 import Todo from './components/TodoComponents/Todo';
+import './App.css';
 
 const list = [
   
@@ -93,10 +94,11 @@ addList = (e, item) => {
 
   handleChanges = e => {
     console.log(e.target.value);
+
     this.setState({
-      [e.target.name]: e.target.value 
-   
+      [e.target.name]: e.target.value
     });
+ 
 };   
 
 
@@ -114,7 +116,7 @@ addList = (e, item) => {
 
   render() {
     return (
-      <div>
+      <div className="Container">
       <TodoList list={this.state.list} toggleItem={this.toggleItem} />
         <TodoForm
         addList={this.addList}
@@ -135,10 +137,3 @@ addList = (e, item) => {
 
 export default App;
 
-// <div>
-      //   <h2>Todo List:</h2>
-      //   <div className="todo-list">
-      //   {this.state.list.map((individualList, index) =>(
-      //     <Todo key={this.state.id} list={individualList} toggleItem={this.toggleItem} />
-      //   ))}
-      //   </div></div>

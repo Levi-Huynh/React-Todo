@@ -1,10 +1,42 @@
 
 
-.completed {
+.listcompleted {
     text-decoration: line-through;
+    opacity: .5;
+   font-size: 1.2rem;
 }
 
 .form{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+   align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.input{
+ height: 70px;
+ width: 379px;
+ font-size: 1.6rem;
+ /* border: 1px solid green; */
+}
+
+button{
+    height: 40px;
+    width: 15%;
+    border-radius: 15px;
+    box-shadow: 5px 10px #888888;
+ 
+    /* border: 1px solid green; */
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(107,12,113,1) 100%);
+}
+
+button:hover{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+
+.list{
+    font-size: 1.2rem;
 }

@@ -5,8 +5,9 @@ import React from 'react';
 const TodoForm = props => {
 return (
     <div className="form">
-    <form onSubmit = {props.addList}>
-    <input
+    <form id="form1" onSubmit = {props.addList}>
+    <input  className="input"
+      
        type="text"
         value={props.task}
         name='task'
@@ -19,6 +20,9 @@ return (
     </div>
 );
 };
+
+
+
 
    
 export default TodoForm;
