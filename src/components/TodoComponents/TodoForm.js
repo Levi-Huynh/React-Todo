@@ -15,8 +15,10 @@ return (
         placeholder="...todo"
     />
     </form>
-    <button  onClick={props.addList}>Add Todo</button>
-    <button onClick={props.clearTask}>Clear Completed</button>
+    <div className="buttonDiv">
+    <button className="green" onClick={props.addList}>Add Todo</button>
+    <button className="red" onClick={props.clearTask}>Clear Completed</button>
+    </div>
     </div>
 );
 };

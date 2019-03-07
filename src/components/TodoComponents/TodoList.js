@@ -26,8 +26,8 @@ const list = [
 
 const TodoList = props => {
  return (
-  <div>
-  <h2>Todo List:</h2>
+  <div className="TodoList1">
+  <h2 className="titleHeader">Todo List:</h2>
   <div className="todo-list">
   {props.list.map((individualList, index) =>(
     <Todo key={individualList.id} list={individualList} toggleItem={props.toggleItem} />

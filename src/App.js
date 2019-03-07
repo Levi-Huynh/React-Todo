@@ -50,6 +50,7 @@ addList = (e, item) => {
 
       this.setState({
      list: [...this.state.list, newList],
+     task: ''
       });
 };
 
@@ -98,9 +99,9 @@ addList = (e, item) => {
     this.setState({
       [e.target.name]: e.target.value
     });
- 
-};   
 
+    document.getElementById('form1').reset();
+};   
 
 
   clearTask = e => {
